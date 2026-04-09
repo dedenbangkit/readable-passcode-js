@@ -24,13 +24,13 @@ Readable passcodes are memorable and easy to communicate:
 ## Install
 
 ```bash
-npm install readable-passcode
+npm install readable-passcode-js
 ```
 
 ## Quick Start
 
 ```ts
-import { generatePasscode } from "readable-passcode";
+import { generatePasscode } from "readable-passcode-js";
 
 generatePasscode();
 // "mango-river-27"
@@ -98,7 +98,7 @@ generatePasscode({ style: "funny", emoji: true });
 Convert a passcode to a voice-friendly format for phone calls or voice verification.
 
 ```ts
-import { toSpeakable } from "readable-passcode";
+import { toSpeakable } from "readable-passcode-js";
 
 toSpeakable("mango-river-27");
 // "alpha mango river twenty-seven"
@@ -124,7 +124,7 @@ type SpeakableOptions = {
 Convert a number (0-99) to English words.
 
 ```ts
-import { numberToWords } from "readable-passcode";
+import { numberToWords } from "readable-passcode-js";
 
 numberToWords(42);  // "forty-two"
 numberToWords(15);  // "fifteen"
@@ -136,7 +136,7 @@ numberToWords(80);  // "eighty"
 Create a deterministic speakable converter for testing.
 
 ```ts
-import { createSpeakableConverter } from "readable-passcode";
+import { createSpeakableConverter } from "readable-passcode-js";
 
 const toSpeakable = createSpeakableConverter(() => 0.5);
 toSpeakable("ocean-river-27");
@@ -148,7 +148,7 @@ toSpeakable("ocean-river-27");
 Access the built-in word lists for customization:
 
 ```ts
-import { words, emojis } from "readable-passcode";
+import { words, emojis } from "readable-passcode-js";
 
 console.log(words.default);   // ["ocean", "river", "forest", ...]
 console.log(words.funny);     // ["pickle", "llama", "waffle", ...]
@@ -250,7 +250,7 @@ Full TypeScript support with exported types:
 import type {
   GeneratePasscodeOptions,
   SpeakableOptions
-} from "readable-passcode";
+} from "readable-passcode-js";
 ```
 
 ## Contributing

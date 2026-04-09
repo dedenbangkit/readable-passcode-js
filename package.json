@@ -1,5 +1,5 @@
 {
-  "name": "readable-passcode",
+  "name": "readable-passcode-js",
   "version": "1.0.0",
   "description": "Generate human-friendly, memorable passcodes like 'mango-river-27' instead of ugly codes like '839201'",
   "type": "module",
