@@ -1,6 +1,6 @@
 {
   "name": "readable-passcode-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate human-friendly, memorable passcodes like 'mango-river-27' instead of ugly codes like '839201'",
   "type": "module",
   "main": "./dist/index.cjs",
